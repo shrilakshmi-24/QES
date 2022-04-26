@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="Add_question.css"> </head>
+<body>
+    <center>
+    <form onsubmit=" false;" id="form">
+
+        <h5>Add question</h4>
+        <input type="text" name="" id="ques" required>
+        <button onclick="myFunction()">Submit</button>
+        <p>Your Question <br> <input type="text" id="demo" size="20" disabled></p>
+
+    </form>
+
+
+    <script>
+        function myFunction() {
+            event.preventDefault();
+        var mylist = document.getElementById("myList");
+        var q=document.getElementById('ques').value
+        document.getElementById("demo").value=q
+        }
+    </script>
+</center>
+    </body>
+</html>
